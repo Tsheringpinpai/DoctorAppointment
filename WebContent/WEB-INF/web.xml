@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+	<servlet>
+		<servlet-name>first</servlet-name>
+		<servlet-class>com.appointment.DoctorRegister</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>first</servlet-name>
+		<url-pattern>/dregister</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>apptwo</servlet-name>
+		<servlet-class>com.appointment.DoctorLogin</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>apptwo</servlet-name>
+		<url-pattern>/loginDoctor</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>appthree</servlet-name>
+		<servlet-class>com.appointment.PatientRegister</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>appthree</servlet-name>
+		<url-pattern>/registerPatient</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>appfour</servlet-name>
+		<servlet-class>com.appointment.PatientLogin</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>appfour</servlet-name>
+		<url-pattern>/loginpatient</url-pattern>
+	</servlet-mapping>
+
+</web-app>
